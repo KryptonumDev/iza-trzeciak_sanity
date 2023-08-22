@@ -5,24 +5,23 @@ export default {
   icon: () => '🌍',
   fields: [
     {
-      name: 'tel',
       type: 'string',
-      title: 'Numer telefonu',
+      name: 'linkedin',
+      title: 'LinkedIn',
+      validation: Rule => Rule.required(),
+      fieldset: 'social',
     },
     {
-      name: 'email',
       type: 'string',
-      title: 'Adres e-mail',
-    },
-    {
       name: 'facebook',
-      type: 'string',
-      title: 'Facebook Link',
+      title: 'Facebook',
+      validation: Rule => Rule.required(),
+      fieldset: 'social',
     },
     {
-      name: 'youtube',
-      type: 'string',
-      title: 'YouTube Link',
+      name: 'image',
+      type: 'image',
+      title: 'Zdjęcie',
     },
     {
       name: 'seo',
@@ -30,6 +29,15 @@ export default {
       title: 'Globalne SEO',
     },
   ],
+  fieldsets: [
+    {
+      name: 'social',
+      title: 'Social linki',
+      options: {
+        collapsible: true
+      }
+    }
+  ]
 }
 
 export const global_Seo = {
