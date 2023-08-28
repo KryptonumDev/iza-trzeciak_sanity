@@ -1,27 +1,37 @@
 // Single Types
 import global, { global_Seo } from './singleTypes/global'
 import homepage from './singleTypes/homepage'
+import cooperation from './singleTypes/cooperation'
+import privacyPolicy from './singleTypes/privacyPolicy'
 import notFound from './singleTypes/notFound'
 
 export const singleTypes = [
   homepage,
+  cooperation,
+  privacyPolicy,
   notFound,
 ]
 
 // Collection Types
-import faq from './collectionTypes/faq'
 
 export const collectionTypes = [
-  faq,
+
 ]
 
 // Componenets
 import cta from './components/cta'
 import seo from './components/seo'
+import { titleAndImage } from './components/tile'
+import contact from './components/contact'
+import faq, { questionAndAnswer } from './components/faq'
 
 export const components = [
   cta,
-  seo
+  seo,
+  titleAndImage,
+  contact,
+  faq,
+  questionAndAnswer,
 ]
 
 export const schemaTypes = [

@@ -5,6 +5,13 @@ export default {
   icon: () => '🌍',
   fields: [
     {
+      name: 'email',
+      type: 'string',
+      description: 'Ten adres e-mail będzie wyświetlany na stronie, oraz będzie on adresem odbierającym wszystkie wiadomości w formularza kontaktowego na stronie.',
+      validation: Rule => Rule.required(),
+      title: 'Email',
+    },
+    {
       type: 'string',
       name: 'linkedin',
       title: 'LinkedIn',
