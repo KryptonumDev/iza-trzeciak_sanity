@@ -23,6 +23,8 @@ import cta from './components/cta'
 import seo from './components/seo'
 import { titleAndImage } from './components/tile'
 import contact from './components/contact'
+import ctaSection from './components/ctaSection'
+import textSection from './components/textSection'
 import faq, { questionAndAnswer } from './components/faq'
 
 export const components = [
@@ -30,6 +32,8 @@ export const components = [
   seo,
   titleAndImage,
   contact,
+  ctaSection,
+  textSection,
   faq,
   questionAndAnswer,
 ]

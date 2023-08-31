@@ -29,6 +29,46 @@ export default {
       fieldset: 'hero',
     },
     {
+      name: 'textSection',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
+      name: 'textSection2',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
+      name: 'ctaSection',
+      type: 'ctaSection',
+      title: 'Sekcja wezwanie do działania'
+    },
+    {
+      name: 'textSection3',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
+      name: 'textSection4',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
+      name: 'textSection5',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
+      name: 'ctaSection2',
+      type: 'ctaSection',
+      title: 'Sekcja wezwanie do działania'
+    },
+    {
+      name: 'textSection6',
+      type: 'textSection',
+      title: 'Sekcja z tekstem'
+    },
+    {
       name: 'contact',
       type: 'contact',
       title: 'Kontakt',

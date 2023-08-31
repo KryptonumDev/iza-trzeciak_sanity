@@ -30,7 +30,7 @@ export default {
       description: 'Link relatywny lub absolutny (z https://)',
       validation: Rule =>
         Rule.custom(value => {
-          if (value && !value.startsWith('/') && !value.startsWith('https://')) {
+          if (value && !value.startsWith('/') && !value.startsWith('https://') && !value.startsWith('#')) {
             return 'Nieprawidłowy adres URL.';
           }
           return true;
