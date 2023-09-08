@@ -2,7 +2,7 @@ import { removeMarkdown } from "../../utils/functions"
 
 export const titleAndImage = {
   name: "titleAndImage",
-  title: "Title And Image",
+  title: "Title and Image",
   type: "object",
   fields: [
     {
@@ -26,6 +26,36 @@ export const titleAndImage = {
     return {
       title: removeMarkdown(title),
       media
+    }
+  }
+}
+
+export const titleAndDescription = {
+  name: "titleAndDescription",
+  title: "Title and Description",
+  type: "object",
+  fields: [
+    {
+      name: 'title',
+      type: 'markdown',
+      title: 'Tytuł',
+    },
+    {
+      name: 'description',
+      type: 'markdown',
+      title: 'Opis',
+    },
+  ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'description'
+    }
+  },
+  prepare({ title, subtitle }) {
+    return {
+      title: removeMarkdown(title),
+      subtitle: removeMarkdown(subtitle),
     }
   }
 }
